@@ -1,0 +1,332 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Yeseva One', cursive;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+	font-family: 'Gentium Basic', serif;
+    font-size: 16px;
+}
+a:hover { text-decoration: none }
+
+
+.header-area {
+	width: 100%;
+	z-index: 999;
+}
+.is-sticky .header-area {
+	background: #000;
+}
+.top-area {
+  position: relative;
+}
+.top-area-bg {
+	background: url(../img/header-bg.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+}
+.header-text {
+	padding: 50px 0;
+}
+.header-text h2{
+	background: url(../img/line_symbol.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	font-size: 70px;
+	color: #fff;
+	padding-bottom: 70px;
+	margin-bottom: 40px;
+}
+.mainmenu {
+    position: relative;
+    padding-right: 80px;
+}
+.mainmenu ul.nav.navbar-nav {
+  float: none;
+  text-align: right;
+}
+.mainmenu ul.nav.navbar-nav li {
+    float: none;
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+}
+.mainmenu ul.nav.navbar-nav li a {
+    color: #fff;
+    padding: 40px 16px;
+}
+.mainmenu ul.nav.navbar-nav li a:hover { background: none }
+.mainmenu ul.nav.navbar-nav li.active:before {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #cc9900;
+    left: 0px;
+    content: "";
+    top: 0px;
+}
+
+.btn-filled {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 0 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.btn-filled::after {
+	z-index: -1;
+	background: #1D2122;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: .8;
+}
+.yellow-btn-filled:after {
+	background: #cfbd82;
+	opacity: .8;
+}
+
+.social-icons {
+	position: absolute;
+	top: 38px;
+	right: 0;
+	display: inline-block;
+	padding-left: 5px;
+}
+.social-icons a {
+    color: #dab33e;
+    font-size: 20px;
+}
+
+
+/* about area */
+.about-area {
+	background: url(../img/symphony.png);
+}
+.section-padding {
+	padding: 80px 0px;
+}
+.section-title {
+	background: url(../img/section-title-pattern.png) no-repeat scroll center bottom;
+	color: #cc9900; 
+	padding-bottom: 35px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.about-text {
+	font-size: 16px;
+	margin-top: 20px;
+}
+.author-photo {
+	margin-top: 30px;
+}
+
+
+
+/* ingredients-area */
+.ingredients-area {
+	position: relative;
+}
+.parallax-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+.ingredients-bg {
+	background: url(../img/irr-sec-bg.jpg);
+}
+.ingredients-text {
+	position: relative;
+	font-size: 16px;
+	color: #fff;
+	z-index: 1;
+	padding: 30px;
+}
+.ingredients-text::after, .testimonial-list::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+}
+.ingredients-text p {
+	margin-bottom: 30px;
+}
+
+.section-title.white-sec-title {
+	color: #fff;
+	background-image: url(../img/section-title-pattern-white.png);
+}
+
+/* food-menu-area */
+.food-menu-area {
+	background: url(../img/symphony.png);
+}
+.single-food-menu-item {
+	margin-bottom:40px;
+}
+.single-food-menu-item h2 {
+	font-size: 20px;
+	border-bottom: 1px solid;
+	color: #cc9900;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.single-food-menu-item h2 span {
+	float: right;
+	font-weight: 400;
+}
+
+.single-food-menu-item.special {
+	border: 1px solid #d6bb6c;
+	padding: 10px;
+	position: relative;
+}
+.single-food-menu-item.special::before {
+	background: #d6bb6c none repeat scroll 0 0;
+	color: #fff;
+	content: "Special";
+	font-size: 14px;
+	padding: 1px 5px;
+	position: absolute;
+	right: -1px;
+	text-transform: uppercase;
+	top: -23px;
+}
+.single-food-menu-item p {
+	margin: 0;
+}
+
+/* testimonial-area */
+.testimonial-area {
+	position: relarive;
+}
+.testimonial-area {
+	background-image: url(../img/testimonial-bg.jpg);
+}
+.testimonial-list {
+	font-size: 25px;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	padding: 50px;
+}
+.testimonial-list p.testimonial-author {
+	font-size: 18px;
+	margin-top: 38px;
+}
+#testimonial-carousel:before {
+	font-family: FontAwesome;
+	content: "\f10d";
+	position: absolute;
+	left: -30px;
+	top: -17px;
+	color: #9A9B9A;
+	font-size: 35px;
+}
+
+/* contact-us-area */
+.contact-us-area {
+	background-image: url(../img/symphony.png);
+}
+
+.contact-img img {
+	width: 205px;
+	margin-left: 20px;
+}
+
+.contact-form {
+	text-align: left;
+	margin-top: 30px;
+}
+.contact-form input[type="text"], .contact-form select {
+	width: 100%;
+	border: 1px solid #E2D4AC;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+
+.contact-form label {
+	color:#cb9821;
+}
+.contact-form button {
+	background: #cb9821 none repeat scroll 0 0;
+	border: medium none;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 5px 30px;
+	width: 150px;
+}
+
+
+
+/* footer-area */
+.footer-area {
+	background: #191919 none repeat scroll 0 0;
+	color: #bfbfbf;
+	padding: 50px 0;
+	font-size: 15px;
+}
+.footer-area .section-title {
+	color: #fff;
+	font-size: 20px;
+	background-image: url(../img/section-title-pattern-little.png);
+}
+.footer-area strong {
+	color: #fff;
+}
+.footer-cards {
+	color: #fff;
+	margin-top: 28px;
+}
+.footer-cards i {
+	margin: 0 2px;
+}
+.footer-social-icon a {
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	padding: 0 3px;
+}
