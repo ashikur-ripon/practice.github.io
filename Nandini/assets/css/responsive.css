@@ -1,0 +1,104 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+.hero-content p {
+    margin: 30px 0 28px 0;
+}  
+.hero-content h1 {
+    font-size: 45px;
+}
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+  
+}
+/* Tablet & Mobile Layout: 768px. */
+@media only screen and (max-width: 991px) {
+    .mainmenu ul.navbar-nav{
+        background: rgb(0,0,0, .9);
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .mainmenu li a {
+        padding: 10px 20px;
+    }	
+
+    .hero-content h1 {
+    font-size: 40px;
+	}
+
+	.hero-content p {
+    margin: 30px 0 30px 0;
+    color: #fff;
+	}
+
+	.boxed-btn {
+    font-size: 16px;
+    padding: 6px 15px;
+	}
+
+	.hero-area .owl-dots div {
+	    height: 13px;
+	    width: 13px;
+	    margin: 0 2px;
+	}
+
+	.hero-area .owl-dots {
+	    margin-top: -65px;
+	    left: 46%;
+	}
+
+	.about-right h3 {
+	    color: #000000;
+	    font-size: 20px;
+	}
+	.about-right p {
+	    line-height: 25px;
+	    margin-top: 15px;
+	}
+
+	.about-right .boxed-icon-btn {
+    	margin-top: 20px;
+	}
+
+	.boxed-icon-btn {
+	    font-size: 16px;
+	    padding: 6px 15px;
+	}
+
+	.about-left img {
+	    height: 340px;
+	}
+
+	.counter-box {
+	    margin-bottom: 35px;
+	}
+	.counter-name {
+	    font-size: 22px;
+	}
+
+	.single-blog-item {
+	    margin-bottom: 30px;
+	}
+	
+
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.about-left {
+	    margin-bottom: 35px;
+	}
+   	.about-right p {
+	    margin-top: 10px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
